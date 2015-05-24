@@ -9,6 +9,7 @@ html {
 label, input {
   display:block;
   width:100%;
+  margin:0; /* remove default */
 }
 
 label {
@@ -45,9 +46,9 @@ button:active {
 
 
 .time label {
-  width:33%;
+  width:33.3%;
   float:left;
-  padding:0.5rem;
+  padding:0 0.5rem;
 }
 
 .time label:first-child {
@@ -57,6 +58,7 @@ button:active {
 .time label:last-child {
   padding-right:0;
 }
+
 body {
   font-family:'PT Sans';
   max-width:700px;
