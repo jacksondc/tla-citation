@@ -96,6 +96,10 @@ function buildCitation() {
   var eventPhrase = joinWithSpaces(eventPhrases);
 
   var citation = joinWithSpaces(idPhrase, titlePhrase, eventPhrase);
-  $('.final').html(citation);
-  $('.final-section').show();
+  if(citation.length > 0) {
+    $('.final').html(citation);
+    $('.final-section').show();
+  } else {
+    $('.final-section').hide();
+  }
 };
