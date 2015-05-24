@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>citation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='styles/main.css' rel='stylesheet' type='text/css'>
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <form onsubmit="return false;">
+      <h1>TLA Generator</h1>
+
+      <h3>General Info</h3>
+      <label>ID <input name="id" placeholder="A/RES/62/24"></label>
+      <label>Title <input name="title" placeholder="The Six Best Colors"></label>
+      <label>Long? <input type="checkbox" name="long"></label>
+      <label>Creator Name <input name="creator" placeholder="John Smith or The Color Association"></label>
+
+      <h3>Events</h3>
+      <div id="events">
+      </div>
+
+      <button id="addEvent">Add Event</button>
+
+      <div class="hidden" id="eventTemplate">
+        <label>Action <input name="action" placeholder="Written"></label>
+        <div class="time">
+          <label>Month: <input name="month" placeholder="August" type="text" /></label>
+          <label>Day: <input name="day" placeholder="12" type="text" /></label>
+          <label>Year: <input name="year" placeholder="1901" type="text" /></label>
+        </div>
+        <div>URL:
+          <input name="place" placeholder="http://example.com" />
+        </div>
+        <div>
+          <label>Bigger work <input name="bigger-work" placeholder="The Anthology"></label>
+          <label>Long? <input type="checkbox" name="long-bigger-work"></label>
+        </div>
+      </div>
+    </form>
+
+    <div class="final-section">
+      <h2>Completed citation</h2>
+      <p class="final"></p>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

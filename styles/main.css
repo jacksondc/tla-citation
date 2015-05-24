@@ -1,0 +1,72 @@
+html {
+  font-size:1em;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+label, input {
+  display:block;
+  width:100%;
+}
+
+label {
+  margin-bottom:1rem;
+}
+
+input[type=checkbox] {
+  display:inline;
+  width:auto;
+}
+
+input, button {
+  font-size:1rem;
+  border:3px solid #999;
+  margin:0.25rem 0;
+  padding:0.25rem;
+  outline:none;
+  background:transparent;
+}
+
+input:focus {
+  border-color:#333;
+}
+
+button {
+  color:#009dff;
+  border-color:#29adff; /*lighten it up a bit so it doesn't look so heavy compared to the other borders */
+}
+
+button:active {
+  color:#333;
+  border-color:#333;
+}
+
+
+.time label {
+  width:33%;
+  float:left;
+  padding:0.5rem;
+}
+
+.time label:first-child {
+  padding-left:0;
+}
+
+.time label:last-child {
+  padding-right:0;
+}
+body {
+  font-family:'PT Sans';
+  max-width:700px;
+  margin:0 auto;
+}
+
+input {
+  font-family:inherit;
+}
+
+.hidden {
+  display:none;
+}
